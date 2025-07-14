@@ -272,10 +272,6 @@ local stealBtn = createModernButton(mainContent, "💰 STEAL (works randomly)", 
 
 local floatBtn = createModernButton(mainContent, "🟣 FLOAT", UDim2.new(0, 0, 0, 50))
 
-local freecamBtn = createModernButton(mainContent, "🎥 FREECAM", UDim2.new(0, 0, 0, 100))
-
-local antikickBtn = createModernButton(mainContent, "🛡️ ANTI-KICK", UDim2.new(0, 0, 0, 150))
-
 local godmodeBtn = createModernButton(mainContent, "⚡ GOD MODE", UDim2.new(0, 0, 0, 200))
 
 
@@ -517,46 +513,6 @@ floatBtn.MouseButton1Click:Connect(function()
     end
 
     floatOn = not floatOn
-
-end)
-
-
-
--- FREECAM FUNCTIONALITY
-
-freecamBtn.MouseButton1Click:Connect(function()
-
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Freecam'))()
-
-end)
-
-
-
--- ANTI-KICK FUNCTIONALITY
-
-antikickBtn.MouseButton1Click:Connect(function()
-
-    local originalText = antikickBtn.Text
-
-    antikickBtn.Text = "🛡️ LOADING..."
-
-    antikickBtn.BackgroundColor3 = Color3.fromRGB(138, 43, 226)
-
-    
-
-    pcall(function()
-
-        loadstring(game:HttpGet("https://pastefy.app/dAjYZBnq/raw"))()
-
-    end)
-
-    
-
-    task.wait(1)
-
-    antikickBtn.Text = "🛡️ ANTI-KICK ON"
-
-    antikickBtn.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
 
 end)
 
