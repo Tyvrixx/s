@@ -20,7 +20,7 @@ local playerGui = player:WaitForChild("PlayerGui")
 
 local screenGui = Instance.new("ScreenGui", playerGui)
 
-screenGui.Name = "HurryGUI"
+screenGui.Name = "Ass Hub"
 
 screenGui.ResetOnSpawn = false
 
@@ -80,7 +80,7 @@ titleLabel.Position = UDim2.new(0, 15, 0, 0)
 
 titleLabel.BackgroundTransparency = 1
 
-titleLabel.Text = "⚡ REN HUB"
+titleLabel.Text = "Ass Hub On Top"
 
 titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 
@@ -300,7 +300,7 @@ creditsLabel.Position = UDim2.new(0, 0, 0, 105) -- Moved up from 130 to 105
 
 creditsLabel.BackgroundTransparency = 1
 
-creditsLabel.Text = "💜 Credits to gay balls"
+creditsLabel.Text = "💜 Credits To @somerandommonster"
 
 creditsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 
@@ -402,7 +402,7 @@ stealBtn.MouseButton1Click:Connect(function()
 
     local originalText = stealBtn.Text
 
-    stealBtn.Text = "💰 STEALING..."
+    stealBtn.Text = "💰 ROBBING THAT MF..."
 
     stealBtn.BackgroundColor3 = Color3.fromRGB(138, 43, 226)
 
